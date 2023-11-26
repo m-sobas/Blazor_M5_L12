@@ -4,17 +4,17 @@
     <div class="column">
         <div class="header category-name todo">Do zrobienia</div>
 
-        <div class="card" draggable="true" ondragover="event.preventDefault()" @ondragstart="OnDragStart">
+        <div class="card" draggable="true" ondragover="event.preventDefault()" @ondragstart="OnDragStart" @ondragend="OnDragEnd">
             <div class="header">Zadanie 1</div>
             <div class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
         </div>
 
-        <div class="card" draggable="true" ondragover="event.preventDefault()" @ondragstart="OnDragStart">
+        <div class="card" draggable="true" ondragover="event.preventDefault()" @ondragstart="OnDragStart" @ondragend="OnDragEnd">
             <div class="header">Zadanie 2</div>
             <div class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
         </div>
 
-        <div class="card" draggable="true" ondragover="event.preventDefault()" @ondragstart="OnDragStart">
+        <div class="card" draggable="true" ondragover="event.preventDefault()" @ondragstart="OnDragStart" @ondragend="OnDragEnd">
             <div class="header">Zadanie 3</div>
             <div class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
         </div>
@@ -26,7 +26,7 @@
     <div class="column">
         <div class="header category-name doing">W realizacji</div>
 
-        <div class="card" draggable="true" ondragover="event.preventDefault()" @ondragstart="OnDragStart">
+        <div class="card" draggable="true" ondragover="event.preventDefault()" @ondragstart="OnDragStart" @ondragend="OnDragEnd">
             <div class="header">Zadanie 4</div>
             <div class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
         </div>
@@ -38,12 +38,12 @@
     <div class="column">
         <div class="header category-name done">Ukończone</div>
 
-        <div class="card" draggable="true" ondragover="event.preventDefault()" @ondragstart="OnDragStart">
+        <div class="card" draggable="true" ondragover="event.preventDefault()" @ondragstart="OnDragStart" @ondragend="OnDragEnd">
             <div class="header">Zadanie 5</div>
             <div class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
         </div>
 
-        <div class="card" draggable="true" ondragover="event.preventDefault()" @ondragstart="OnDragStart">
+        <div class="card" draggable="true" ondragover="event.preventDefault()" @ondragstart="OnDragStart" @ondragend="OnDragEnd">
             <div class="header">Zadanie 6</div>
             <div class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
         </div>

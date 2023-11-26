@@ -60,6 +60,10 @@ namespace Blazor_M5_L12.Components
             _test = "DROP DOWN!";
         }
 
+        private void OnDragEnd()
+        {
+            _test = "";
+        }
 
     }
 }
