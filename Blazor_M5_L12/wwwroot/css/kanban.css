@@ -1,0 +1,71 @@
+﻿.kanban-board {
+    background-color: white;
+    display: flex;
+    width: 100%;
+    padding: 50px 0 20px;
+    font-size: 14pt;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.column {
+    width: 30%;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: white;
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    padding: 5px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.header {
+    background-color: whitesmoke;
+    width: 100%;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.category-name {
+    padding: 20px 0;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.todo {
+    background-color: bisque;
+}
+
+.doing {
+    background-color: lavender;
+}
+
+.done {
+    background-color: aquamarine;
+}
+
+.note {
+    font-size: 12pt;
+    margin: 10px 0;
+}
+
+.dragzone {
+    border-radius: 10px;
+    width: 100%;
+    height: 30px;
+}
+
+.dragover {
+    background-color: lightgreen;
+    height: 130px;
+    cursor: pointer;
+}
+
+.dragleave {
+    background-color: none;
+    height: 30px;
+}
+
