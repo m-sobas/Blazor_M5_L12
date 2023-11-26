@@ -1,5 +1,4 @@
-﻿using Blazor_M5_L12.Data;
-using Blazor_M5_L12.Models;
+﻿using Blazor_M5_L12.Models;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 using System.Reflection;
@@ -17,7 +16,7 @@ namespace Blazor_M5_L12.Components
 
         private void OnDragOverToDo()
         {
-            _test = "OVER!";
+            _test = "DRAG OVER!";
             _style_drag_ToDo = "dragover";
         }
 
@@ -29,7 +28,7 @@ namespace Blazor_M5_L12.Components
 
         private void OnDragOverDoing()
         {
-            _test = "OVER!";
+            _test = "DRAG OVER!";
             _style_drag_Doing = "dragover";
         }
 
@@ -41,7 +40,7 @@ namespace Blazor_M5_L12.Components
 
         private void OnDragOverDone()
         {
-            _test = "OVER!";
+            _test = "DRAG OVER!";
             _style_drag_Done = "dragover";
         }
 
@@ -53,7 +52,7 @@ namespace Blazor_M5_L12.Components
 
         private void OnDragStart(DragEventArgs e) 
         {
-            _test = "START...";
+            _test = "DRAG START...";
         }
 
         private void OnDropDoing(DragEventArgs e)

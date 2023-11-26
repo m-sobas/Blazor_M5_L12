@@ -1,5 +1,4 @@
 using Blazor_M5_L12;
-using Blazor_M5_L12.Data;
 using Blazor_M5_L12.Pages;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
