@@ -1,58 +1,13 @@
 ﻿@using Blazor_M5_L12.Models
 
 <div class="kanban-board">
-    <div class="column">
-        <div class="header category-name todo">Do zrobienia</div>
-
-        <div class="card" draggable="true" ondragover="event.preventDefault()" @ondragstart="OnDragStart" @ondragend="OnDragEnd">
-            <div class="header">Zadanie 1</div>
-            <div class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-        </div>
-
-        <div class="card" draggable="true" ondragover="event.preventDefault()" @ondragstart="OnDragStart" @ondragend="OnDragEnd">
-            <div class="header">Zadanie 2</div>
-            <div class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-        </div>
-
-        <div class="card" draggable="true" ondragover="event.preventDefault()" @ondragstart="OnDragStart" @ondragend="OnDragEnd">
-            <div class="header">Zadanie 3</div>
-            <div class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-        </div>
-
-        <div class="dragzone @_style_drag_ToDo" @ondragover="OnDragOverToDo" @ondragleave="OnDragLeaveToDo"></div>
-
-    </div>
-
-    <div class="column">
-        <div class="header category-name doing">W realizacji</div>
-
-        <div class="card" draggable="true" ondragover="event.preventDefault()" @ondragstart="OnDragStart" @ondragend="OnDragEnd">
-            <div class="header">Zadanie 4</div>
-            <div class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-        </div>
-
-        <div class="dragzone @_style_drag_Doing" @ondragover="OnDragOverDoing" @ondragleave="OnDragLeaveDoing" @ondrop="OnDropDoing"></div>
-
-    </div>
-
-    <div class="column">
-        <div class="header category-name done">Ukończone</div>
-
-        <div class="card" draggable="true" ondragover="event.preventDefault()" @ondragstart="OnDragStart" @ondragend="OnDragEnd">
-            <div class="header">Zadanie 5</div>
-            <div class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-        </div>
-
-        <div class="card" draggable="true" ondragover="event.preventDefault()" @ondragstart="OnDragStart" @ondragend="OnDragEnd">
-            <div class="header">Zadanie 6</div>
-            <div class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-        </div>
-
-        <div class="dragzone @_style_drag_Done" @ondragover="OnDragOverDone" @ondragleave="OnDragLeaveDone"></div>
-
-    </div>
+    <div class="column todo">Do zrobienia</div>
+    <div class="column doing">W trakcie</div>
+    <div class="column done">Ukończone</div>
 </div>
 
-<br />
-
-<h1>@_test</h1>
+<div class="kanban-board">
+    <CascadingValue Value="this">
+        @ChildContent
+    </CascadingValue>
+</div>

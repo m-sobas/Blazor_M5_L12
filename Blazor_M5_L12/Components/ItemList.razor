@@ -1,0 +1,14 @@
+﻿<div class="column"
+
+    ondragover="event.preventDefault();"
+    ondragstart="event.dataTransfer.setData('', event.target.id);"
+    @ondrop="HandleDrop"
+    @ondragenter="HandleDragEnter"
+    @ondragleave="HandleDragLeave">
+
+    @foreach (var item in Items)
+    {
+        <Item Id="@item.Id" Title="@item.Title" Note="@item.Note" ItemModel="item" />
+    }
+
+</div>

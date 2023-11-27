@@ -1,10 +1,29 @@
 ﻿@using Blazor_M5_L12.Components
+@using Blazor_M5_L12.Models
 
 @page "/kanban"
 
-@* <h1>Tablica Kanban</h1> *@
 
-
-<KanbanBoard>
-
+<KanbanBoard Items="Items" OnStatusUpdated="HandleStatusUpdated">
+    <ItemList State="StateType.ToDo" />
+    <ItemList State="StateType.Doing" />
+    <ItemList State="StateType.Done" />
 </KanbanBoard>
+
+<br />
+
+ <EditForm class="card" Model="_itemModel" OnValidSubmit="AddItem">
+
+    <div class="form-group mt-3 mx-5">
+        <label class="form-label">Tytuł:</label>
+        <InputText @bind-Value="_itemModel.Title" class="form-control"></InputText>
+    </div>
+    <div class="form-group mt-3 mx-5">
+        <label class="form-label">Notatka:</label>
+        <InputTextArea @bind-Value="_itemModel.Note" class="form-control" rows="4"></InputTextArea>
+    </div>
+    <button class="btn btn-primary my-3 btn-lg mx-5">
+        Dodaj
+    </button>
+
+ </EditForm>
