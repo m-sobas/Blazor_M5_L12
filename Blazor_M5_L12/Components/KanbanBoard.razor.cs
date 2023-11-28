@@ -20,16 +20,7 @@ namespace Blazor_M5_L12.Components
 
         public async Task UpdateItemAsync(StateType State)
         {
-            ItemModel task = null;
-
-            try
-            {
-                task = Items.SingleOrDefault(x => x.Id == Payload.Id);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("ERRORA!!!  " + ex.ToString());
-            }
+            var task = Items.SingleOrDefault(x => x.Id == Payload.Id);
             
             if (task != null)
             {
